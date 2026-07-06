@@ -294,19 +294,19 @@ No
 ใครช่วยคุณ
 
 ```text
-
+-
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+-
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+Everything in Code
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -323,10 +323,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |Yes |
-| I understand my final code. |Yes |
-| I recorded the real OJ status. |Yes |
-| I did not copy AI-generated text directly into this file. |Yes |
-| I did not copy code from another person. |Yes |
-| If I received human help, I disclosed it in this file. |Yes |
-| I submitted the final code to the OJ by myself. |Yes |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
