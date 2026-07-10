@@ -1,17 +1,12 @@
-"""d"""
-def main():
-    """d"""
-    x = int(input())
-    y = int(input())
-    a = float(input())
-    z = float(input())
-    
-    pro_group = z // x
-    left_pp = z % x
-    pro_cost = (pro_group * y) * a
-    normal_cost = left_pp * a
-    total = (pro_cost + normal_cost)
+"""pro"""
+x = int(input())
+y = int(input())
+a = int(input())
+z = int(input())
 
-    print(total)
+groups = z // x
+leftover = z % x
+total_paying_people = (groups * y) + leftover
+total_price = total_paying_people * a
 
-main()
+print(total_price)
