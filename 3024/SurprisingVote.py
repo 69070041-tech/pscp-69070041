@@ -1,20 +1,21 @@
-"""wow"""
-total = float(input())
-max_score = float(input())
+"""woww"""
 
-mid_plus_min = total - max_score
+total_score = float(input())
+highest = float(input())
 
-max_min_score = mid_plus_min / 2
+remaining_sum = total_score - highest
 
-if max_min_score > max_score:
-    max_min_score = max_score
+possible_mid = remaining_sum / 2
 
-min_min_score = mid_plus_min - max_score
+if possible_mid > highest:
+    possible_mid = highest
 
-if min_min_score < 0:
-    min_min_score = 0
+possible_lowest = remaining_sum - highest
 
-if max_score - min_min_score > 2:
+if possible_lowest < 0:
+    possible_lowest = 0
+
+if highest - possible_lowest > 2:
     print("Surprising")
 else:
     print("Not surprising")
