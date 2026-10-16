@@ -1,24 +1,29 @@
 """Arcade of Time : Store Check"""
-num, check = map(int, input().split())
 
-diff = [0] * 1445
-i = 0
+line1 = input().split()
+num = int(line1[0])
+check = int(line1[1])
+
+MAXT = 1441
+diff = [0] * (MAXT + 2)
+
 for i in range(num):
-    start, stop = map(int, input().split())
+    line = input().split()
+    start = int(line[0])
+    stop = int(line[1])
     diff[start] += 1
     diff[stop] -= 1
 
-open_stores = [0] * 1445
-current_open = 0
-for minute in range(1442):
-    current_open += diff[minute]
-    open_stores[minute] = current_open
+count = [0] * (MAXT + 2)
+running = 0
+for t in range(MAXT + 2):
+    running += diff[t]
+    count[t] = running
 
-check_times = list(map(int, input().split()))
-
+queries = input().split()
 results = []
 for i in range(check):
-    k = check_times[i]
-    results.append(str(open_stores[k]))
+    k = int(queries[i])
+    results.append(str(count[k]))
 
-print(" ".join(results))
+print(' '.join(results))
